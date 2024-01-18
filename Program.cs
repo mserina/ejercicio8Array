@@ -13,6 +13,7 @@
             bool cerrarBucle = false;
 
             string[] palabras = { "Hola", "Adios","Nuevo", "Viejo", "Vamos"};
+            int[] numeros = { 1, 5, 7, 8, 4, 3, 9 };
            
             indice = Array.IndexOf(palabras,"Adios"); //si existe mas de uno solo nos dara la primera posicion
 
@@ -40,6 +41,12 @@
                 Console.WriteLine("No existe en el array");
             }
 
+            var mayores3 = numeros.Where(num => num > 3);
+
+            foreach (var num3 in mayores3)
+            {
+                Console.WriteLine(num3);
+            }
 
 
 
